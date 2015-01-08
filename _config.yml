@@ -1,0 +1,9 @@
+title: Seminar on Macrorealism
+email: lucas@clemente.io
+description: > # this means to ignore newlines until "baseurl:"
+  MPQ Theory Group seminar on macrorealism
+baseurl: "/macrorealism"
+url: "https://clemente.io"
+
+# Build settings
+markdown: kramdown

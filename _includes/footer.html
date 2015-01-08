@@ -1,0 +1,25 @@
+<script type="text/javascript" src="{{ "/js/reveal.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  Reveal.initialize({
+    controls: false,
+    history: true,
+
+    theme: 'solarized',
+    transition: 'default',
+
+    math: {
+      mathjax: 'https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js',
+      config: 'TeX-AMS_HTML-full'
+    },
+
+    /*leap: {
+      naturalSwipe   : true,
+      pointerOpacity : 0.8,
+      pointerColor   : '#d55'
+    },*/
+
+    dependencies: [
+      /*{ src: 'plugin/math/math.js', async: true }*/
+    ]
+  });
+</script>

@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="reveal">
+  <div class="slides">
+    {% for slide in site.posts reversed %}
+      <section id="{{ slide.title }}">
+        {{ slide.content }}
+      </section>
+    {% endfor %}
+  </div>
+</div>
