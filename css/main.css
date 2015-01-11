@@ -8,6 +8,10 @@
   margin-top: 0.5em;
 }
 
+.reveal .MathJax_Display {
+  margin-bottom: 0.5em;
+}
+
 a.ref:before {
   font-family: 'FontAwesome';
   content: '\f0f6';
