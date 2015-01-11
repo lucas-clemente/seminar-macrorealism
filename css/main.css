@@ -3,6 +3,11 @@
   font-style: normal;
 }
 
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
+
 .reveal h2 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
@@ -21,3 +26,24 @@ a.ref:before {
 #title h1 {
   font-size: 7em;
 }
+
+#magnetomech-setup {
+  height: 300px;
+}
+
+#magnetomech-ball {
+  position: relative;
+  top: -330px;
+  height: 300px;
+  animation: oscillate;
+  -webkit-animation: oscillate 0.2s ease-in-out 0s infinite alternate;
+     -moz-animation: oscillate 0.2s ease-in-out 0s infinite alternate;
+          animation: oscillate 0.2s ease-in-out 0s infinite alternate;
+}
+
+@-webkit-keyframes oscillate { from { transform: translateX(10px); } to { }  }
+   @-moz-keyframes oscillate { from { transform: translateX(10px); } to { }  }
+        @keyframes oscillate { from { transform: translateX(10px); } to { }  }
+
+
+
