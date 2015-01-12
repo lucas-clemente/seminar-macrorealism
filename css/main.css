@@ -58,9 +58,15 @@ a.ref:before {
           animation: oscillate 0.2s ease-in-out 0s infinite alternate;
 }
 
-@-webkit-keyframes oscillate { from { transform: translateX(10px); } to { }  }
-   @-moz-keyframes oscillate { from { transform: translateX(10px); } to { }  }
-        @keyframes oscillate { from { transform: translateX(10px); } to { }  }
-
-
-
+@-moz-keyframes oscillate {
+  from { transform: translateX(0px); }
+  to   { transform: translateX(-10px); }
+}
+@-webkit-keyframes oscillate {
+  from { transform: translateX(0px); }
+  to   { transform: translateX(-10px); }
+}
+@keyframes oscillate {
+  from { transform: translateX(0px); }
+  to   { transform: translateX(-10px); }
+}
