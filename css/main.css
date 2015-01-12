@@ -8,13 +8,14 @@
   box-shadow: none;
 }
 
-.reveal h2 {
+.reveal h2, .reveal h3 {
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
 
 .reveal .MathJax_Display {
   margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 ul.unstyled li {
@@ -28,6 +29,13 @@ a.ref:before {
   content: '\f0f6';
   margin-right: 0.5ex;
 }
+
+.reveal sub {
+  font-size: 0.8em;
+}
+
+
+/* Specific slides */
 
 #title h1 {
   font-size: 7em;
