@@ -38,6 +38,22 @@ a.ref:before {
   width: 90%;
 }
 
+.reveal table {
+  border-collapse: collapse;
+  margin: 0px auto;
+}
+
+.reveal table td {
+  padding: 0.5em;
+  text-align: center;
+  border-bottom: solid 1px #657b83;
+  vertical-align: middle;
+}
+
+.reveal table td:first-child {
+  text-align: left;
+}
+
 /* Specific slides */
 
 #title h1 {
