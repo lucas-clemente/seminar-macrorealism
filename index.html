@@ -106,10 +106,14 @@
 
   <script type="text/javascript" src="js/reveal.min.js"></script>
   <script type="text/javascript">
+    if (window.location.hostname === "locahost" || window.location.hash != "") {
     Reveal.initialize({
       controls: false,
       history: true,
     });
+    } else {
+      document.getElementsByTagName("body")[0].innerHTML = '<div class="reveal"><h2>Not yet, check back soon :)</h2></div>';
+    }
   </script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
