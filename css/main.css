@@ -17,6 +17,12 @@
   margin-bottom: 0.5em;
 }
 
+ul.unstyled li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 a.ref:before {
   font-family: 'FontAwesome';
   content: '\f0f6';
