@@ -86,3 +86,11 @@ a.ref:before {
   from { transform: translateX(0px); }
   to   { transform: translateX(-10px); }
 }
+
+#nsit0T h2 {
+  margin-bottom: 0;
+}
+
+#nsit0T img {
+  width: 80%;
+}
