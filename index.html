@@ -232,18 +232,18 @@
         <h2>NSIT<sub>(0)T</sub></h2>
         <img src="img/nsit.svg">
         $$P_{\hat B}(b) = \operatorname{tr}(\hat B_b \hat U_T \hat \rho_0 \hat U_T^\dagger \hat B_b^\dagger)$$
-        $$\bar P_{\hat B|\hat A}(b) = \int \operatorname{d}a\,\operatorname{tr}(\hat B_b \hat U_T \hat A_a \hat \rho_0 \hat A_a^\dagger \hat U_T^\dagger \hat B_b^\dagger)$$
+        $$\bar P_{\hat B|\hat A}(b) = \int \text{d}a\,\operatorname{tr}(\hat B_b \hat U_T \hat A_a \hat \rho_0 \hat A_a^\dagger \hat U_T^\dagger \hat B_b^\dagger)$$
       </section>
 
       <section>
         <h1>NSIT<sub>(0)0</sub></h1>
-        $$P_{\hat B}(b) - \bar P_{\hat B|\hat A}(b) = \int \operatorname{d}a\,\operatorname{tr}([\hat A_a \hat B_b, \hat B_b \hat A_a] \hat \rho_0) = 0$$
-        $$\int \operatorname{d}a\,[\hat A_a \hat B_b, \hat B_b \hat A_a] = 0$$
+        $$P_{\hat B}(b) - \bar P_{\hat B|\hat A}(b) = \int \text{d}a\,\operatorname{tr}([\hat A_a \hat B_b, \hat B_b \hat A_a] \hat \rho_0) = 0$$
+        $$\int \text{d}a\,[\hat A_a \hat B_b, \hat B_b \hat A_a] = 0$$
       </section>
 
       <section>
         <h2>General NSIT<sub>(0)0</sub></h2>
-        $$\forall \rho_0: \text{NSIT}_{(0)0} \Leftrightarrow \int \operatorname{d}a\,[\hat A_a \hat B_b, \hat B_b \hat A_a] = 0$$
+        $$\forall \rho_0: \text{NSIT}_{(0)0} \Leftrightarrow \int \text{d}a\,[\hat A_a \hat B_b, \hat B_b \hat A_a] = 0$$
         <h2>For projectors</h2>
         $$\forall \rho_0: \text{NSIT}_{(0)0} \Leftrightarrow [\hat A_a, \hat B_b] = 0$$
       </section>
@@ -251,13 +251,13 @@
       <section>
         <h1>NSIT<sub>(0)T</sub></h1>
         $$P_{\hat B}(b) = \operatorname{tr}(\hat B_b \hat U_T \hat \rho_0 \hat U_T^\dagger \hat B_b^\dagger)$$
-        $$\bar P_{\hat B|\hat A}(b) = \int \operatorname{d}a\,\operatorname{tr}(\hat B_b \hat U_T \hat A_a \hat \rho_0 \hat A_a^\dagger \hat U_T^\dagger \hat B_b^\dagger)$$
+        $$\bar P_{\hat B|\hat A}(b) = \int \text{d}a\,\operatorname{tr}(\hat B_b \hat U_T \hat A_a \hat \rho_0 \hat A_a^\dagger \hat U_T^\dagger \hat B_b^\dagger)$$
         <p>define $\tilde B_b^T \equiv \hat U_T^\dagger \hat B_b \hat U_T$</p>
       </section>
 
       <section>
         <h2>General NSIT<sub>(0)T</sub></h2>
-        $$\forall \rho_0: \text{NSIT}_{(0)T} \Leftrightarrow \int \operatorname{d}a\,[\hat A_a \tilde B^T_b, \tilde B^T_b \hat A_a] = 0$$
+        $$\forall \rho_0: \text{NSIT}_{(0)T} \Leftrightarrow \int \text{d}a\,[\hat A_a \tilde B^T_b, \tilde B^T_b \hat A_a] = 0$$
         <h2>For projectors</h2>
         $$\forall \rho_0: \text{NSIT}_{(0)T} \Leftrightarrow [\hat A_a, \tilde B^T_b] = 0$$
       </section>
@@ -289,12 +289,57 @@
         <h2>Coarse-grained versions of<br>quantum measurement operators</h2>
       </section>
 
+      <section>
+        <h1>Reference operators</h1>
+        <ul>
+          <li>Coarse-grained coherent states</li>
+          <li>Unsharp quadrature measurements</li>
+          <li>Coarse-grained Fock measurements</li>
+        </ul>
+      </section>
+
+      <section>
+        $$V = \int \text{d}b \sqrt{P_{\hat B}(b) \bar P_{\hat B|\hat A}(b)} \in [0,1]$$
+        <p><i class="fa fa-file-text-o"></i> Bhattacharyya 1943</p>
+      </section>
+
+      <section>
+        <h1>Coherent states</h1>
+        $$\hat A_\alpha = |\alpha\rangle\langle\alpha|, \hat B_\beta = |\beta\rangle\langle\beta|$$
+        $$\hat \rho_0 = |\gamma\rangle\langle\gamma|$$
+        $$V(T = 0) = \frac{2 \sqrt 2}{3} \approx 0.943$$
+      </section>
+
+      <section>
+        <img src="img/ring-overlaps.svg">
+        <h2>Coherent state rings</h2>
+        <p>Overlap for different bin sizes</p>
+        <p>blue: bin border, orange: center of bin</p>
+      </section>
+
+      <section id="quadrature-plots">
+        <img src="img/quadrature_D2=1.png">
+        <img src="img/quadrature_D2=0_03.png">
+        <img src="img/quadrature_D2=0_0001.png">
+        <h2>Probability distributions for quadrature measurements</h2>
+        <p>left to right: increase in sharpness</p>
+      </section>
+
+      <section>
+        <h1>Review</h1>
+        <h2>NSIT conditions for Macrorealism</h2>
+        <h2>NSIT for operators and Hamiltonians</h2>
+        <h2>Classicality</h2>
+      </section>
+
       <section id="references">
         <h1>FIN</h1>
         <ul class="unstyled">
           <li><a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.54.857" class="ref">Original LGI paper</a></li>
-          <li><a class="ref" href="http://arxiv.org/abs/1304.5133">Review on LGIs</a></li>
+          <li><a class="ref" href="http://arxiv.org/abs/1304.5133">Review of LGIs</a></li>
+          <li><a class="ref" href="http://iopscience.iop.org/0953-8984/14/15/201/">Leggett on MR (2002)</a></li>
           <li><a class="ref" href="http://journals.aps.org/pra/abstract/10.1103/PhysRevA.87.052115">No-signaling in time</a></li>
+          <li><a class="ref" href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.99.180403">Coarse-graining with spins</a></li>
         </ul>
       </section>
     </div>
@@ -313,7 +358,13 @@
   </script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
-      tex2jax: {inlineMath: [['$','$'], ['$$','$$']]}
+      tex2jax: {inlineMath: [['$','$'], ['$$','$$']]},
+      styles: {
+        ".MathJax_SVG svg > g, .MathJax_SVG_Display svg > g": {
+          fill: "#657b83",
+          stroke: "#657b83"
+        }
+      },
     });
   </script>
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
